@@ -24,6 +24,11 @@ Follow these steps to set up and run the Anomaly Detector application:
       ngrok http 5000
       ```
 3. **Setup GitHub Webhook**
+    
+     Create a new webhook and configure it as follows:
+    - Payload URL: https://<your-ngrok-subdomain.ngrok.io>/AnomalyDetector
+    - Content type: application/json
+    - Events: Select the events you want to monitor (e.g., "Pushes," "Repositories," "Teams").
 
 4. **Build and Run**:
     - Build and run the application 
